@@ -1,13 +1,237 @@
-body {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.table,
+.tableHeaderElements,
+.tableContentElements,
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.tableHeader,
+.tableContents {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-flow: column;
+}
+.tableHeaderElements,
+.tableContentElements,
+.productionDisplay,
+.navBar,
+.newOperation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productionDisplay {
+  flex-direction: column;
+  position: relative;
+}
+
+.tableHeaderElements,
+.tableContentElements {
+  font-size: 22px;
+  width: 115px;
+  padding: 10px;
+}
+
+.tableContentElements {
+  height: 100px;
+}
+
+.navBar {
+  width: 100%;
+  height: 40px;
+}
+
+.table {
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.tableHeaderElements,
+.navBar {
+  background-color: #5b9bd5;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 70px;
+}
+input[type="date"] {
+  font-size: 11px;
+}
+
+.newOperation {
+  width: 100px;
+}
+.addNewOperation {
+  padding: 0;
+  background: #00b0f0;
+  font-size: 16px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+.addNewOperation:hover {
+  background: rgba(0, 176, 240, 0.5);
+}
+
+button[type="submit"] {
+  background: #5b9bd5;
+  border: none;
+  font-size: 15px;
+  width: 80px;
+  height: 30px;
+  border-radius: 6px;
+  transition: 100ms;
+  margin-top: 20px;
+  position: relative;
+  left: 17%;
+}
+
+button[type="submit"]:hover {
+  background-color: lightgrey;
 }
