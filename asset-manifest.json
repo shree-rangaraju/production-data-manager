@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/production-data-manager/static/css/main.81ddf503.css",
+    "main.js": "/production-data-manager/static/js/main.40df1b14.js",
+    "static/js/787.cd51531a.chunk.js": "/production-data-manager/static/js/787.cd51531a.chunk.js",
+    "index.html": "/production-data-manager/index.html",
+    "main.81ddf503.css.map": "/production-data-manager/static/css/main.81ddf503.css.map",
+    "main.40df1b14.js.map": "/production-data-manager/static/js/main.40df1b14.js.map",
+    "787.cd51531a.chunk.js.map": "/production-data-manager/static/js/787.cd51531a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ddf503.css",
+    "static/js/main.40df1b14.js"
+  ]
+}
