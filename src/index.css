@@ -189,7 +189,8 @@ select {
   margin-top: 20px;
 }
 
-.tableHeaderElements {
+.tableHeaderElements,
+.navBar {
   background-color: #5b9bd5;
 }
 
